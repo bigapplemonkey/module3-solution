@@ -62,7 +62,8 @@ body {
 }
 
 h1.text-center {
-    margin-top: 40px;
+    margin-top: 15px;
+    padding-top: 25px;
     color: #777777;
 }
 
@@ -82,10 +83,36 @@ h2.text-center {
     color: #777777;
 }
 
-.nav li:hover, .nav li:focus {
+.nav li:hover, .nav li:focus, .btn.btn-info:hover {
     background-color: #dddddd;
 }
 
+.btn.btn-info:hover {
+    -webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
+    background-color: #1BCACD;
+    color: white;
+}
+
+.btn.btn-info {
+    border-style: none;
+    background-color: #dddddd;
+    color: #777777;
+    border-radius: 0;
+    margin: 20px auto;
+    float: right;
+}
+
+.glyphicon {
+    margin-right: 5px;
+}
+
+.clear-float {
+    clear: right;
+}
 @media (min-width: 768px) {
     .navbar-collapse {
         background-color: #1BCACD;
